@@ -2,7 +2,7 @@ fun main() {
     
     var kota = arrayOf("Jakarta","Jakarta","Padang","Solo","Padang","Bandung","Padang","Malang","Bali")
 	for (name in kota){
-        val counter : Int = name.groupBy { it }.count()
+        val counter = kota.groupingBy { it }.eachCount()
         if (name.equals("Jakarta")){
 			println("jakarta: $counter")
         }
